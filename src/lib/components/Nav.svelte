@@ -17,7 +17,7 @@
 
 <nav class="mb-5 flex items-center justify-between border-b border-slate-200 py-5">
 	<div class="flex items-center space-x-4">
-		<a href="/home" class=" hover:text-sky-900 hover:underline">Guesthouse</a>
+		<a href="/home" class=" hover:text-sky-900 hover:underline">Guest house</a>
 	</div>
 
 	<div class="flex items-center space-x-4 text-sm font-bold">

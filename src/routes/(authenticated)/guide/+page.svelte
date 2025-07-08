@@ -1,1 +1,1 @@
-<h1>Guide to the guesthouse</h1>
+<h1>Guide to the guest house</h1>

@@ -36,10 +36,10 @@
 
 <!-- <Label class="mb-2">Select the dates</Label> -->
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 	<Card.Root class="gap-0 shadow-none">
 		<Card.Header class="pb-3 text-center">
-			<Card.Title class="font-medium">Nightingale Preston Guest House</Card.Title>
+			<Card.Title class="font-medium">Preston guest house</Card.Title>
 		</Card.Header>
 
 		<Card.Content class="mt-0 flex flex-col gap-4 px-4">

@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-	<title>Guesthouse</title>
+	<title>Guest house</title>
 </svelte:head>
 
 <form

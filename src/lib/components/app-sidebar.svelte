@@ -12,7 +12,7 @@
 	// Menu items.
 	const items = [
 		{
-			title: 'Guest House',
+			title: 'Guest house',
 			url: '/home',
 			icon: HouseIcon
 		},
