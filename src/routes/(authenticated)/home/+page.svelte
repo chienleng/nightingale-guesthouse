@@ -1,5 +1,8 @@
 <script>
 	import CalendarIcon from '@lucide/svelte/icons/calendar';
+	import { goto } from '$app/navigation';
+
+	import HousePlusIcon from '@lucide/svelte/icons/house-plus';
 	import { CalendarDate, DateFormatter, getLocalTimeZone } from '@internationalized/date';
 	import { cn } from '$lib/utils.js';
 
@@ -8,7 +11,7 @@
 	import * as Popover from '$lib/components/ui/popover/index.js';
 	import { buttonVariants } from '$lib/components/ui/button/index.js';
 	import * as Card from '$lib/components/ui/card/index.js';
-
+	import { Button } from '$lib/components/ui/button/index.js';
 	import NewBooking from '$lib/components/new-booking.svelte';
 	const df = new DateFormatter('en-AU', {
 		dateStyle: 'medium'
@@ -47,11 +50,23 @@
 		<p class="text-muted-foreground text-sm">You have no upcoming bookings.</p>
 		<!-- <marquee>You have no upcoming bookings!</marquee> -->
 
-		<NewBooking />
+		<Button
+			class="w-[150px] cursor-pointer"
+			onclick={() => {
+				goto('/booking/new');
+			}}
+		>
+			<HousePlusIcon class="size-5" />
+			New booking
+		</Button>
+		<!-- <NewBooking /> -->
 	</div>
 	<Card.Root class="shadow-sidebar-primary-foreground w-[300px] rounded-md">
 		<Card.Header class="border-b">
-			<Card.Title>Available dates</Card.Title>
+			<Card.Title class="flex items-center gap-2">
+				<CalendarIcon class="size-5" />
+				Availability
+			</Card.Title>
 		</Card.Header>
 		<Card.Content>
 			<Calendar

@@ -38,7 +38,7 @@
 			<Breadcrumb.Root>
 				<Breadcrumb.List>
 					<Breadcrumb.Item>
-						<Breadcrumb.Page>Your bookings</Breadcrumb.Page>
+						<Breadcrumb.Page>Hello, {profile?.display_name || user.email}</Breadcrumb.Page>
 					</Breadcrumb.Item>
 				</Breadcrumb.List>
 			</Breadcrumb.Root>
