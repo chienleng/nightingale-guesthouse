@@ -73,7 +73,7 @@
 						locale="en-AU"
 						bind:value
 						fixedWeeks={true}
-						disableDaysOutsideMonth={true}
+						disableDaysOutsideMonth={false}
 						{isDateUnavailable}
 						onStartValueChange={(v) => {
 							startValue = v;
