@@ -8,7 +8,6 @@ import { supabase } from '$lib/supabaseClient';
  * @type {import('./$types').PageServerLoad}
  */
 export const load = async ({ url, locals: { safeGetSession } }) => {
-	console.log(url);
 	const { session } = await safeGetSession();
 
 	// if the user is already logged in return them to the home page
@@ -16,9 +15,7 @@ export const load = async ({ url, locals: { safeGetSession } }) => {
 		redirect(303, '/home');
 	}
 
-	const { data } = await supabase.from('countries').select('*');
-
-	return { url: url.origin, form: await superValidate(zod(formSchema)), countries: data ?? [] };
+	return { url: url.origin, form: await superValidate(zod(formSchema)) };
 };
 
 /**
