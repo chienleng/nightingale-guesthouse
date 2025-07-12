@@ -1,0 +1,5 @@
+---
+'nightingale-guesthouse': minor
+---
+
+poc
